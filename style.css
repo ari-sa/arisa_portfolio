@@ -576,6 +576,10 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 .trip-text span,.pet-text span,.move-text span,.fashion-text span,.sweets-text span{
     font-size: 20px;
 }
+/* skill */
+.skill-content{
+    gap: 40px;
+}
 /* works-page */
 .URL{
     margin-bottom: 50px;
