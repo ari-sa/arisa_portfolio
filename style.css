@@ -125,7 +125,7 @@ header{
     margin: 0 10%;
 }
 .about-img{
-    background-image: url(../image/about.jpg);
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about.jpg?raw=true");
     background-size: 450px;
     width: 450px;
     height: 450px;
@@ -145,8 +145,9 @@ header{
     top: 1485px;
 }
 
-/* ABOUT-PAGE */.about-page-img{
-    background-image: url(../image/about.jpg);
+/* ABOUT-PAGE */
+.about-page-img{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about.jpg?raw=true");
     background-size: 450px;
     width: 450px;
     height: 450px;
