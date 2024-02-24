@@ -94,9 +94,9 @@ header{
 }
 .top-name{
     text-align: center;
-    font-size: 90px;
+    font-size: 80px;
     font-weight: lighter;
-    font-family: Gabriola, sans-serif;
+    font-family: Georgia, serif;
     line-height: 0.75em;
     color: #0079E9;
     min-width: auto;
