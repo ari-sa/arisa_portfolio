@@ -248,7 +248,7 @@ dl{
     margin-right: 119px;
 }
 .pet{
-    background-image: url(../image/about-pet.jpg);
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about-pet.jpg?raw=true");
     background-size: 120%;
     width: 320px;
     height: 320px;
