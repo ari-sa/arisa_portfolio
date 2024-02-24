@@ -87,7 +87,7 @@ header{
 
 /* トップ画像 */
 .top-img{
-    background-image: url(../image/top.jpg);
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/top.jpg?raw=true");
     background-size: cover;
     background-position: center;
     height: 806px;
