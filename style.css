@@ -204,10 +204,13 @@ dl{
     font-size: 24px;
     line-height: 120%;
     margin-left: 30px;
-    margin-right: 170px;
+    margin-right: 110px;
     padding-bottom: 35px;
 }
-
+.strengths-text{
+    width: 600px;
+    margin-bottom: 50px;
+}
 .circle{
     width: 30px;
     height: 30px;
@@ -331,26 +334,33 @@ p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.s
     padding-top: 70px;
     padding-bottom: 30px;
 }
-.box-wrapper{
+.box-wrapper div{
     display: flex;
-    gap: 120px;
-    width: 1890px;
-    margin: 0 auto;
+}
+.box-wrapper img{
+    width: 550px;
+    height: 300px;
+}
+.box-wrapper div, .slick-slide{
+    list-style: none;
 }
 .box{
     width: 550px;
     height: 300px;
     object-fit:cover;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
 .box-wrapper img:hover{
     opacity: 0.8;
     cursor: grabbing;
 }
 .btn-works{
+    position: relative;
     position: absolute;
-    top: 2640px;
+    top: 2680px;
 }
-
 /* WORKS-PAGE */
 .works-page-title{
     margin-top: 70px;
@@ -406,6 +416,7 @@ form div{
 
 .contact-icon img{
     height: 135px;
+    width: 136px;
 }
 .contact-icon{
     display: flex;
@@ -465,20 +476,18 @@ input:hover{
     border:#0f054b 3px solid;
 }
 .top-return{
-    display: flex;
-    position: absolute;
-    right: 120px;
-    top: 3755px;
-    font-size: 18px;
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    display: none;
 }
 
-.top-return p{
-    padding-right: 10px;
-    padding-top: 2px;
+.top-return img:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
-.top-return:hover{
-    color: blue;
-}
+
 
 /* フッター */
 footer{
@@ -580,6 +589,21 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 .skill-content{
     gap: 40px;
 }
+/* works */
+.works-content{
+    height: 500px;
+}
+.btn-works{
+    position: relative;
+    position: absolute;
+    top: 2850px;
+}
+.box-wrapper img{
+    width: 275px;
+    height: 150px;
+    margin: initial;
+    margin: 0 10px;
+}
 /* works-page */
 .URL{
     margin-bottom: 50px;
@@ -624,7 +648,7 @@ header{
     font-size: 40px;
     width: 250px;
     padding: initial;
-    padding-top: 150px;
+    padding-top: 160px;
     text-align: center;
 }
 /* ABOUT */
@@ -779,23 +803,30 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 .works-content h2{
     padding-bottom: initial;
 }
-
-.box-wrapper{ animation: none;
+/* .box-wrapper div{ 
+    display: block;
+    animation: none;
+}*/
+/* 
+.box-wrapper{
+    animation: none;
     transform: none;
     transition: unset;
     display: block;
     width: auto;
     height: 200px;
-    margin: 0 10%;
-}
-.box{
-    min-width: initial;
-    object-fit: fill;
-    min-height: initial;
+    margin: 0 15%;
+} */
+img.box{
+    width: 275px;
     height: 150px;
-    margin-bottom: 30px;
+    margin: initial;
+    padding: initial;
+    margin-bottom: 20px;
 }
-
+#slide{
+    display: none;
+}
 .btn-works{
     position: absolute;
     top: 2800px;
@@ -844,6 +875,7 @@ form div{
 }
 .contact-icon img{
     height: 80px;
+    width: 80px;
 }
 .contact-text{
     margin-top: 4px;
@@ -871,7 +903,7 @@ input[type="submit"]{
     margin-top: 20px;
 }
 .top-return{
-    position: absolute;
+    position: fixed;
     right: 10%;
     top: 3700px;}
 /* フッター */
