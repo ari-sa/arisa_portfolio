@@ -12,8 +12,13 @@
         <!-- css -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="slick/slick-theme.css">
         <link rel="stylesheet" href="https://ari-sa.github.io/arisa_portfolio/style.css">
-       
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/script.js"></script>
 
     <body>
 
@@ -86,13 +91,13 @@
             <div class="works-content">
                 <h2 class="title">WORKS<br><span>制作物</span></h2>
                 <div class="box-container">
-                    <div class="box-wrapper">
-                        <a href="https://1990ari16.wixsite.com/my-site-2">
+                   <div id="slide" class="box-wrapper">
+                        <div><a href="https://1990ari16.wixsite.com/my-site-2">
                             <img class="box" src="https://github.com/ari-sa/arisa_portfolio/blob/main/web%20coach%20design.jpg?raw=true" alt="WEB COACH-site"></a>
-                        <a href="https://1990ari16.wixsite.com/co-working">
+                        <div><a href="https://1990ari16.wixsite.com/co-working"></div>
                             <img class="box" src="https://github.com/ari-sa/arisa_portfolio/blob/main/co%20working%20space.jpg?raw=true" alt="co-working-site"></a>
-                        <a href="https://1990ari16.wixsite.com/my-site-1">
-                            <img class="box" src="https://github.com/ari-sa/arisa_portfolio/blob/main/%E7%B5%8C%E5%96%B6%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0.jpg?raw=true" alt="consulting-site"></a>
+                        <div><a href="https://1990ari16.wixsite.com/my-site-1"></div>
+                            <img class="box" src="https://github.com/ari-sa/arisa_portfolio/blob/main/%E7%B5%8C%E5%96%B6%E3%82%B3%E3%83%B3%E3%82%B5%E3%83%AB%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0.jpg?raw=true" alt="consulting-site"></a></div>
                     </div><!-- box-wrapper -->
                     <button class="btn-works" onclick="location.href='works.html'">LIST</button>
                 </div><!-- box-container -->
@@ -130,10 +135,9 @@
 
         </section><!-- CONTACT -->
 
-        <a class="top-return" href="index.html" alt="トップへ戻る">
-            <p>TOP</p>
-            <span class="material-symbols-rounded">arrow_circle_up</span>
-        </a>
+        <div id="top-page" class="top-return">
+            <img src="./image/top-return.png" alt>
+        </div>
         <!-- FOOTER -->
         <footer>
             <div class="wrapper">
