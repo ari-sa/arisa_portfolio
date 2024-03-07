@@ -341,7 +341,7 @@ p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.s
     width: 550px;
     height: 300px;
 }
-.box-wrapper div, .slick-slide{
+.box-wrapper div,.slick-slide{
     list-style: none;
 }
 .box{
