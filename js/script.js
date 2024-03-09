@@ -7,7 +7,7 @@ $(function(){
         infinite: true,         //スライドをループ
         pauseOnHover: false,    //ホバー時スライドを一時停止
         cssEase: 'linear',      //動き方
-        slidesToShow: 2,        //スライドを画面に2枚見せる
+        slidesToShow: 2.5,        //スライドを画面に2.5枚見せる
         slidesToScroll: 1,      //1回のスライドで動かす要素数
 
         responsive: [
