@@ -517,12 +517,13 @@ footer p{
 }
 .about-page-content{
     display: block;
-    text-align: center;
+    text-align: left;
     padding-top: 0;
     margin-left: 10%;
 }
 .about-page-text{
     margin-top: 30px;
+    width: 450px;
 }
 .about, .CAREER, .STRENGTHS, .HOBBY{
     margin-right: 10%;
