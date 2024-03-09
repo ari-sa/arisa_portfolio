@@ -1,1 +1,917 @@
+@charset "UTF-8";
 
+/* 共通部分 */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Noto Sans JP";
+    color: #0F054B;
+    line-height: 1.44em;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+section{
+    margin-bottom: 70px;
+}
+.about, .skill, .works, .contact{
+    margin-top: 0px;
+}
+.title{
+    font-size: 25px;
+    margin-bottom: 35px;
+    text-align: center;
+    line-height: 30px;
+    font-family: 'Zen Antique', serif;
+}
+span{
+    font-size: 18px;
+}
+button{
+    min-width: 100px;
+    height: 30px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border:#9bcef9 2px solid;
+    border-radius: 20px;
+    background-color: #9bcef9;
+    color: #ffffff;
+    position: absolute;
+    right: 130px;
+}
+button:hover{
+    color: #699BF7;
+    background-color: #ffffff;
+    border:#699bf7 2px solid;
+}
+
+/* ヘッダー */
+header{
+    background: #E1F1FF;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+.page-header{
+    display: flex;
+    justify-content:space-between;
+}
+.logo{
+    width: 79px;
+    height: 69px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.main-nav{
+    display: flex;
+    width: 753px;
+    padding:33px 93px 33px 0;
+    justify-content: space-between;
+    font-size: 18px;
+    list-style: none;
+}
+.main-nav a{
+    color: #003D76;
+}
+.main-nav a:hover{
+    color: blue;
+}
+
+/* トップ画像 */
+.top-img{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/top.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+    height: 806px;
+}
+.top-name{
+    text-align: center;
+    font-size: 80px;
+    font-weight: lighter;
+    line-height: 0.75em;
+    color: #0079E9;
+    min-width: auto;
+    margin: 0 auto;
+    padding-top: 343px;
+    font-family:Georgia, serif;
+}
+.top-circle{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    min-width: auto;
+    border:#0079E9 solid 1px;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,153,255,0.1));
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:178px;
+}
+
+/* ABOUT */
+.about-content{
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
+.about-img{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about.jpg?raw=true");
+    background-size: 450px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-position:50% 80%;
+    margin-left: 50px;
+    margin-right: 55px;
+    }
+.about-text{
+    width: 500px;
+    min-width: auto;
+    margin-top: 133px;
+    margin-left: 55px;
+}
+.btn-about{
+    position: absolute;
+    top: 1485px;
+}
+
+/* ABOUT-PAGE */
+.about-page-img{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about.jpg?raw=true");
+    background-size: 450px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-position:50% 80%;
+    min-width: auto;
+    margin-left: 15%;
+}
+.about-page-content{
+    display: flex;
+}
+.about-page-title{
+    margin-top: 70px;
+    margin-left: 130px;
+    margin-bottom: 35px;
+    font-family: 'Zen Antique', serif;
+    font-size: 25px;
+}
+
+.about-page-text{
+    width: 500px;
+    min-width: auto;
+    margin-top: 133px;
+    margin-left: 100px;
+}
+
+/* CAREER */
+.CAREER{
+    height: 458px;
+    min-width: auto;
+}
+hr{
+    border: none;
+    border-top: 1px dotted #999;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 15%;
+}
+.date{
+    margin-right: 120px;
+}
+dl{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15%;
+}
+
+/* STRENGTHS */
+.STRENGTHS{
+    min-width: auto;
+}
+.strengths-sub-title{
+    width: 280px;
+    font-size: 24px;
+    line-height: 120%;
+    margin-left: 30px;
+    margin-right: 110px;
+    padding-bottom: 35px;
+}
+.strengths-text{
+    width: 600px;
+    margin-bottom: 50px;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #699BF7;
+    min-width: 30px;
+}
+
+      /* HOBBY */
+.bobby-1{
+    display: flex;
+    justify-content:center;
+}
+.bobby-2{
+    display: flex;
+    justify-content:center;
+    margin-top: 25px;
+}
+.trip-text span,.pet-text span,.move-text span,.fashion-text span,.sweets-text span{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.trip-text,.pet-text,.move-text, .fashion-text, .sweets-text{
+    width: 320px;
+    height: 320px;
+    text-align: left;
+    padding: 20% 15%;
+    color:rgba(0,0,0,0);
+}
+
+.trip{
+    background-image: url(https://github.com/ari-sa/arisa_portfolio/blob/main/about-trip.jpg?raw=true);
+    background-size: 320px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-position:50% 50%;
+    min-width: auto;
+    margin-right: 119px;
+}
+.pet{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about-pet.jpg?raw=true");
+    background-size: 120%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-position:50% 50%;
+    min-width: auto;
+}
+.move{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about-move.jpg?raw=true");
+    background-size: 150%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-position:50% 50%;
+    min-width: auto;
+    margin-left: 119px;
+}
+.fashion{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about-fashion.jpg?raw=true");
+    background-size: 150%;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-position:50% 50%;
+    min-width: auto;
+    margin-right: 80px;
+}
+.sweets{
+    background-image: url("https://github.com/ari-sa/arisa_portfolio/blob/main/about-sweets.jpg?raw=true");
+    background-size: 320px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-position:50% 70%;
+    min-width: auto;
+    margin-left: 80px;
+}
+
+p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.sweets-text:hover{
+    color:#0F054B;
+    transition: 1s;
+}
+
+.trip:hover, .pet:hover, .move:hover, .fashion:hover, .sweets:hover{
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode:lighten;
+    transition: 1s;
+}
+
+/* SKILL */
+.skill-content{
+    display:flex;
+    gap: 200px;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    height: 332px;
+    margin: 0 10%;
+}
+.design-img img, .coding-img img{
+    height: 250px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.design p{
+    margin-right: 50px;
+}
+.tool{
+    text-align: center;
+}
+
+/* WORKS */
+
+.works-content{
+    background: linear-gradient( to right, rgba(0,0,0,0),rgba(179,228,255,0.7));
+    height: 630px;
+}
+.works-content h2{
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.box-wrapper div{
+    display: flex;
+}
+.box-wrapper img{
+    width: 550px;
+    height: 300px;
+}
+.box-wrapper div,.slick-slide{
+    list-style: none;
+}
+.box{
+    width: 550px;
+    height: 300px;
+    object-fit:cover;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.box-wrapper img:hover{
+    opacity: 0.8;
+    cursor: grabbing;
+}
+.btn-works{
+    position: relative;
+    position: absolute;
+    top: 2680px;
+}
+/* WORKS-PAGE */
+.works-page-title{
+    margin-top: 70px;
+    margin-left: 130px;
+    margin-bottom: 35px;
+    font-family: 'Zen Antique', serif;
+    font-size: 25px;
+}
+
+.item img{
+    height: 315px;
+    width: 578px;
+}
+.grid{
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(2,578px);
+    margin-top: 45px;
+}
+.site-text{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.site-title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+.URL{
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color:rgba(206, 206, 206, 0.674) ;
+    display: flex;
+    justify-content: center;
+}
+
+.item a:hover{
+    opacity: 0.7;
+}
+/* CONTACT */
+
+form div{
+    margin-bottom: 47px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-icon img{
+    height: 135px;
+    width: 136px;
+}
+.contact-icon{
+    display: flex;
+    justify-content: center;
+}
+.contact-text{
+    margin-top: 39px;
+    padding-left: 27px;
+}
+
+.form-wrapper{
+    text-align: center;
+}
+label{
+    margin-bottom: 5px;
+    margin-top: 47px;
+    display: block;
+    justify-self: flex-start;
+}
+label[for=name],label[for=email],label[for=message]{
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+    background: #ffffff;
+    border: 3px #0F054B solid;
+    border-radius: 25px;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 970px;
+    height: 50px;
+    padding: 6px 25px;
+}
+textarea{
+    width: 100%;
+    max-width: 970px;
+    height: 200px;
+    padding: 6px 25px;
+}
+input[type="submit"]{
+    background-color: #0f054b;
+    color: #FFFFFF;
+    border-radius: 25px;
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+input:hover{
+    color: #0f054b;
+    background-color: #ffffff;
+    border:#0f054b 3px solid;
+}
+.top-return{
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    display: none;
+}
+
+.top-return img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+/* フッター */
+footer{
+    background: #E1F1FF;
+    height: 71px;
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 90px;
+}
+
+footer p{
+    color: #0F054B;
+    font-size: 16px;
+}
+
+/*タブレット*/
+@media screen and (min-width:768px) and ( max-width:1024px) {
+.main-nav{
+    width: 500px;
+    padding: 35px 35px;
+    font-size: 18px;
+}
+.about-content{
+    display: block;
+    text-align: center;
+    padding-top: 0;
+}
+.about-page-content{
+    display: block;
+    text-align: center;
+    padding-top: 0;
+    margin-left: 10%;
+}
+.about-page-text{
+    margin-top: 30px;
+}
+.about, .CAREER, .STRENGTHS, .HOBBY{
+    margin-right: 10%;
+}
+/* CAREER */
+dl{
+    display: block;
+    justify-content:left;
+    padding-right:15px ;
+    }
+hr{
+    width: 600px;
+}
+/* STRENGTHS */
+.circle{
+    float: left;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+dd{
+    margin-left: auto;
+    min-width: auto;
+}
+
+.strengths-sub-title{
+    padding-bottom: 15px;
+    padding-top: 30px;
+    font-size: 20px;
+}
+/* HOBBY */
+
+.bobby-1{
+    display: block;
+    margin-left: 10%;
+}
+.bobby-2{
+    display: block;
+    margin-left: 10%;
+}
+.trip,.pet,.move,.fashion,.sweets{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    margin-bottom: 230px;
+}
+.move{
+    margin-bottom: 260px;
+}
+.fashion{
+    margin-bottom: 200px;
+}
+.sweets{
+    margin-bottom: 230px;
+}
+p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
+    color: #0F054B;
+    padding-top: 330px;
+    font-size: 16px;
+}
+.trip-text span,.pet-text span,.move-text span,.fashion-text span,.sweets-text span{
+    font-size: 20px;
+}
+/* skill */
+.skill-content{
+    gap: 40px;
+}
+/* works */
+.works-content{
+    height: 500px;
+}
+.btn-works{
+    position: relative;
+    position: absolute;
+    top: 2850px;
+}
+.box-wrapper img{
+    width: 275px;
+    height: 150px;
+    margin: initial;
+    margin: 0 10px;
+}
+/* works-page */
+.URL{
+    margin-bottom: 50px;
+}
+.grid{
+    display: block;
+    margin: 0 15%;
+}
+}/* タブレット */
+
+/* スマホ用 */
+@media (max-width:767px) {
+
+/* ヘッダー */
+header{
+    height: 60px;
+}
+
+.logo{
+    height:30px ;
+    width: 40px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.main-nav{
+    width: 290px;
+    padding: 20px 20px;
+    font-size: 12px;
+}
+/* TOP */
+.top-img{
+    height: 400px;
+    min-width:auto;
+}
+.top-circle{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-top: 70px;
+}
+.top-name{
+    font-size: 40px;
+    width: 250px;
+    padding: initial;
+    padding-top: 160px;
+    text-align: center;
+}
+/* ABOUT */
+
+.about-img{
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+}
+
+.about-text{
+    width: 300px;
+    text-align: left;
+    margin: 30px auto;
+}
+.about-content{
+    display: block;
+    text-align: center;
+    padding-top: 0;
+    margin: 0 auto;
+}
+.btn-about{
+    position: absolute;
+    top: 1200px;
+    right: 10%;
+    margin: 0;
+}
+
+/* ABOUT-PAGE */
+.about, .CAREER, .STRENGTHS, .HOBBY{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.about-page-title{
+    margin-left: 10px;
+}
+.about-page-img{
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+}
+
+.about-page-text{
+    width: 300px;
+    text-align: left;
+    margin-top: 30px;
+    margin: 30px auto;
+}
+.about-page-content{
+    display: block;
+    text-align: center;
+    padding-top: 0;
+}
+
+/* CAREER */
+.CAREER{
+    height: 500px;
+}
+dl{
+    display: block;
+    justify-content:left;
+    padding-right:15px ;
+    }
+hr{
+    width: 280px;
+}
+
+/* STRENGTHS */
+.STRENGTHS{
+    height: 600px;
+}
+.circle{
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+dd{
+    margin-left: initial;
+    min-width: auto;
+}
+.strengths-sub-title{
+    padding-bottom: 15px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+.strengths-text{
+    width: 250px;
+    margin-bottom: 50px;
+}
+/* HOBBY */
+
+.bobby-1{
+    display: block;
+}
+.bobby-2{
+    display: block;
+}
+.trip,.pet,.move,.fashion,.sweets{
+    width: 270px;
+    height: 270px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+.move{
+    margin-bottom: 220px;
+}
+.fashion{
+    margin-bottom: 160px;
+}
+.sweets{
+    margin-bottom: 200px;
+}
+p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
+    color: #0F054B;
+    padding-top: 280px;
+    font-size: 16px;
+    padding-left: 0;
+}
+.trip-text span,.pet-text span,.move-text span,.fashion-text span,.sweets-text span{
+    font-size: 20px;
+}
+
+/* SKILL */
+.skill-content{
+    display: block;
+    text-align: center;
+    width: auto;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#skill h2{
+    padding-top: 50px;
+}
+.coding p{
+    margin-top: 20px;
+    }
+.coding-img img{
+    margin-top: 0px;
+    }
+.design{
+    padding-left: 50px;
+    }
+.tool{
+    margin-left: 10%;
+    margin-right:10% ;
+}
+
+    /* WORKS */
+.works-content{
+    height: 740px;
+}
+.works-content h2{
+    padding-top: 50px;
+}
+.works-content h2{
+    padding-bottom: initial;
+}
+/* .box-wrapper div{ 
+    display: block;
+    animation: none;
+}*/
+/* 
+.box-wrapper{
+    animation: none;
+    transform: none;
+    transition: unset;
+    display: block;
+    width: auto;
+    height: 200px;
+    margin: 0 15%;
+} */
+img.box{
+    width: 275px;
+    height: 150px;
+    margin: initial;
+    padding: initial;
+    margin-bottom: 20px;
+}
+#slide{
+    display: none;
+}
+.btn-works{
+    position: absolute;
+    top: 2800px;
+    right: 10%;
+    margin: 0;
+}
+/* WORKS-PAGE */
+.works-page-title{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.item{
+    text-align: center;
+}
+.item img{
+    height: 150px;
+    width: 300px;
+}
+.site-text{
+    font-size: 16px;
+    text-align: center;
+}
+.URL{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.grid{
+    display: block;
+    margin: 0 10%;
+}
+
+/* CONTACT */
+#contact h2{
+    margin-top: 50px;
+}
+form div{
+    margin-bottom: 47px;
+    margin: auto;
+    width: 350px;
+}
+.contact-icon{
+    display:block;
+    text-align: center;
+}
+.contact-icon img{
+    height: 80px;
+    width: 80px;
+}
+.contact-text{
+    margin-top: 4px;
+}
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    padding: 6px 25px;
+}
+textarea{
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    padding: 6px 25px;
+}
+label[for=name],label[for=email],label[for=message]{
+    text-align:center;
+}
+input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.top-return{
+    position: fixed;
+    right: 10%;
+    top: 3700px;}
+/* フッター */
+footer{
+    margin-top: 40px;
+}
+}/* media */
