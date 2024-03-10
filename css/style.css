@@ -848,6 +848,9 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 .works-content h2{
     padding-bottom: initial;
 }
+.box-wrapper{
+    display: block;
+}
 img.box{
     width: 275px;
     height: 150px;
@@ -855,9 +858,7 @@ img.box{
     padding: initial;
     margin-bottom: 20px;
 }
-#slide{
-    display: none;
-}
+
 .btn-works{
     position: absolute;
     top: 2800px;
