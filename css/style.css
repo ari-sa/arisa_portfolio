@@ -871,7 +871,8 @@ img.box{
 /* WORKS-PAGE */
 .works-page-title{
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .item{
     text-align: center;
@@ -892,7 +893,7 @@ img.box{
 
 .grid{
     display: block;
-    margin: 0 20%;
+    margin: 0 10%;
 }
 
 /* CONTACT */
