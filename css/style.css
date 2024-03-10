@@ -850,6 +850,7 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 }
 .box-wrapper{
     display: block;
+    justify-content: center;
 }
 img.box{
     width: 275px;
