@@ -3,6 +3,7 @@
 /* 共通部分 */
 html{
     font-size: 100%;
+    scroll-padding-top: 100px;
 }
 body{
     font-family: "Noto Sans JP";
@@ -122,7 +123,6 @@ header{
 .about-content{
     display: flex;
     justify-content: center;
-    margin: 0 10%;
 }
 .about-img{
     background-image: url(../image/about.jpg);
@@ -131,8 +131,8 @@ header{
     height: 450px;
     border-radius: 50%;
     background-position:50% 80%;
-    margin-left: 50px;
-    margin-right: 55px;
+    padding-left: 50px;
+    padding-right: 55px;
     }
 .about-text{
     width: 500px;
@@ -145,7 +145,12 @@ header{
     top: 1485px;
 }
 
-/* ABOUT-PAGE */.about-page-img{
+/* ABOUT-PAGE */
+.about-page-content{
+    display: flex;
+    justify-content: center;
+}
+.about-page-img{
     background-image: url(../image/about.jpg);
     background-size: 450px;
     width: 450px;
@@ -153,10 +158,6 @@ header{
     border-radius: 50%;
     background-position:50% 80%;
     min-width: auto;
-    margin-left: 15%;
-}
-.about-page-content{
-    display: flex;
 }
 .about-page-title{
     margin-top: 70px;
@@ -249,7 +250,7 @@ dl{
     border-radius: 50%;
     background-position:50% 50%;
     min-width: auto;
-    margin-right: 119px;
+    margin-right: 40px;
 }
 .pet{
     background-image: url(../image/about-pet.jpg);
@@ -268,7 +269,7 @@ dl{
     border-radius: 50%;
     background-position:50% 50%;
     min-width: auto;
-    margin-left: 119px;
+    margin-left: 40px;
 }
 .fashion{
     background-image: url(../image/about-fashion.jpg);
@@ -278,7 +279,7 @@ dl{
     border-radius: 50%;
     background-position:50% 50%;
     min-width: auto;
-    margin-right: 80px;
+    margin-right: 20px;
 }
 .sweets{
     background-image: url(../image/about-sweets.jpg);
@@ -288,7 +289,7 @@ dl{
     border-radius: 50%;
     background-position:50% 70%;
     min-width: auto;
-    margin-left: 80px;
+    margin-left: 20px;
 }
 
 p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.sweets-text:hover{
@@ -303,6 +304,7 @@ p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.s
 }
 
 /* SKILL */
+
 .skill-content{
     display:flex;
     gap: 200px;
@@ -331,7 +333,7 @@ p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.s
     height: 630px;
 }
 .works-content h2{
-    padding-top: 70px;
+    padding-top: 15px;
     padding-bottom: 30px;
 }
 .box-wrapper div{
@@ -371,15 +373,17 @@ p.trip-text:hover, p.pet-text:hover, p.move-text:hover, p.fashion-text:hover,p.s
     font-size: 25px;
 }
 
+.item{
+    width: auto;
+}
 .item img{
-    height: 315px;
-    width: 578px;
+    height: 305px;
+    width: 530px;
 }
 .grid{
     display: grid;
     justify-content: center;
-    gap: 40px;
-    grid-template-columns: repeat(2,578px);
+    grid-template-columns: repeat(2,550px);
     margin-top: 45px;
 }
 .site-text{
@@ -510,21 +514,48 @@ footer p{
     padding: 35px 35px;
     font-size: 18px;
 }
+section.about{
+    margin: initial;
+    margin-bottom: 90px;
+}
 .about-content{
     display: block;
     text-align: center;
-    padding-top: 0;
 }
+.about-img{
+    width: 400px;
+    height: 400px;
+    margin:0 auto;
+}
+
+.about-text{
+    width: 400px;
+    text-align: left;
+    margin: 30px auto;
+}
+.btn-about{
+    position: absolute;
+    top: 1690px;
+    right: 10%;
+    margin: 0;
+}
+
 .about-page-content{
     display: block;
-    text-align: left;
-    padding-top: 0;
-    margin-left: 10%;
+    text-align: center;
 }
+.about-page-img{
+    width: 400px;
+    height: 400px;
+    margin:0 auto;
+}
+
 .about-page-text{
-    margin-top: 30px;
-    width: 450px;
+    width: 400px;
+    text-align: left;
+    margin: 30px auto;
 }
+
 .about, .CAREER, .STRENGTHS, .HOBBY{
     margin-right: 10%;
 }
@@ -606,13 +637,22 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
     margin: 0 10px;
 }
 /* works-page */
-.URL{
-    margin-bottom: 50px;
+.site-text{
+    text-align: center;
+    font-size: 18px;
 }
 .grid{
     display: block;
-    margin: 0 15%;
 }
+.item{
+    text-align: center;
+}
+.URL{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
 }/* タブレット */
 
 /* スマホ用 */
@@ -654,23 +694,22 @@ header{
 }
 /* ABOUT */
 
+.about-content{
+    display: block;
+    text-align: center;
+}
 .about-img{
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     margin:0 auto;
 }
 
 .about-text{
-    width: 300px;
+    width: 270px;
     text-align: left;
     margin: 30px auto;
 }
-.about-content{
-    display: block;
-    text-align: center;
-    padding-top: 0;
-    margin: 0 auto;
-}
+
 .btn-about{
     position: absolute;
     top: 1200px;
@@ -687,13 +726,13 @@ header{
     margin-left: 10px;
 }
 .about-page-img{
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     margin:0 auto;
 }
 
 .about-page-text{
-    width: 300px;
+    width: 270px;
     text-align: left;
     margin-top: 30px;
     margin: 30px auto;
@@ -711,10 +750,11 @@ header{
 dl{
     display: block;
     justify-content:left;
-    padding-right:15px ;
+    padding:0 20px ;
     }
 hr{
-    width: 280px;
+    width: 270px;
+    margin-left: 20px;
 }
 
 /* STRENGTHS */
@@ -733,7 +773,7 @@ dd{
 .strengths-sub-title{
     padding-bottom: 15px;
     padding-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .strengths-text{
     width: 250px;
@@ -748,8 +788,8 @@ dd{
     display: block;
 }
 .trip,.pet,.move,.fashion,.sweets{
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     margin-bottom: 200px;
 }
@@ -760,7 +800,7 @@ dd{
     margin-bottom: 160px;
 }
 .sweets{
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 }
 p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
     color: #0F054B;
@@ -808,20 +848,6 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 .works-content h2{
     padding-bottom: initial;
 }
-/* .box-wrapper div{ 
-    display: block;
-    animation: none;
-}*/
-/* 
-.box-wrapper{
-    animation: none;
-    transform: none;
-    transition: unset;
-    display: block;
-    width: auto;
-    height: 200px;
-    margin: 0 15%;
-} */
 img.box{
     width: 275px;
     height: 150px;
@@ -852,7 +878,7 @@ img.box{
 }
 .site-text{
     font-size: 16px;
-    text-align: center;
+    text-align: left;
 }
 .URL{
     font-size: 16px;
@@ -916,3 +942,4 @@ footer{
     margin-top: 40px;
 }
 }/* media */
+
