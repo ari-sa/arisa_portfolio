@@ -623,12 +623,12 @@ p.trip-text,p.pet-text,p.move-text,p.fashion-text,p.sweets-text{
 }
 /* works */
 .works-content{
-    height: 500px;
+    height: 400px;
 }
 .btn-works{
     position: relative;
     position: absolute;
-    top: 2850px;
+    top: 2650px;
 }
 .box-wrapper img{
     width: 275px;
